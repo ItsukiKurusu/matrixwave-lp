@@ -551,7 +551,10 @@ export default function MatrixWaveLanding() {
               専門スタッフが丁寧にご対応いたします。
             </p>
             <Button size="lg" className="text-lg px-12 py-6 bg-blue-600 hover:bg-blue-700 text-white">
-              お問い合わせフォームへ
+              asChild>
+              <a href="https://www.secure-cloud.jp/sf/business/1741055101GfdWoZwC" target="_blank" rel="noopener noreferrer">
+                お問い合わせフォームへ
+              </a>
             </Button>
           </div>
         </div>
