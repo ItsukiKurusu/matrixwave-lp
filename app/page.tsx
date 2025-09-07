@@ -30,8 +30,7 @@ export default function MatrixWaveLanding() {
               variant="outline"
               size="lg"
               className="text-lg px-8 py-6 border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
-              asChild
-            >
+              asChild>
               <a href="https://www.secure-cloud.jp/sf/business/1741055101GfdWoZwC" target="_blank" rel="noopener noreferrer">
                 詳細資料をダウンロード
               </a>
@@ -550,8 +549,7 @@ export default function MatrixWaveLanding() {
               <br />
               専門スタッフが丁寧にご対応いたします。
             </p>
-            <Button size="lg" className="text-lg px-12 py-6 bg-blue-600 hover:bg-blue-700 text-white">
-              asChild>
+            <Button size="lg" className="text-lg px-12 py-6 bg-blue-600 hover:bg-blue-700 text-white" asChild>
               <a href="https://www.secure-cloud.jp/sf/business/1741055101GfdWoZwC" target="_blank" rel="noopener noreferrer">
                 お問い合わせフォームへ
               </a>
