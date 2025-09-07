@@ -21,8 +21,10 @@ export default function MatrixWaveLanding() {
             これまでにない新たな治療コンセプト
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8 py-6 bg-blue-600 hover:bg-blue-700 text-white">
-              今すぐ問い合わせる
+            <Button size="lg" className="text-lg px-8 py-6 bg-blue-600 hover:bg-blue-700 text-white" asChild>
+              <a href="https://www.secure-cloud.jp/sf/business/1741055101GfdWoZwC" target="_blank" rel="noopener noreferrer">
+                無料相談・デモ予約
+              </a>
             </Button>
             <Button
               variant="outline"
@@ -89,13 +91,23 @@ export default function MatrixWaveLanding() {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h4 className="font-bold text-gray-900 mb-4 text-center">私たちは疑問に思いました</h4>
-                <blockquote className="text-lg font-semibold text-blue-600 text-center mb-4">
-                  「この微弱電流に意味はあるのか？」
-                </blockquote>
-                <p className="text-gray-700 text-center">
-                  時間稼ぎやマッサージ効果、気持ちいいけど治らない...この状況をなんとか変える手段はないのか？
-                </p>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="/omg-chairman-takahashi.png"
+                    alt="株式会社OMGコーポレーション 会長 髙橋 眞"
+                    className="w-40 h-40 object-cover rounded-lg mb-2"
+                  />
+                  <p className="text-xs text-gray-500 mb-4">株式会社OMGコーポレーション　会長　髙橋 眞</p>
+                </div>
+                <div className="mt-6">
+                  <h4 className="font-bold text-gray-900 mb-4 text-center">私たちは疑問に思いました</h4>
+                  <blockquote className="text-lg font-semibold text-blue-600 text-center mb-4">
+                    「この微弱電流に意味はあるのか？」
+                  </blockquote>
+                  <p className="text-gray-700 text-center">
+                    時間稼ぎやマッサージ効果、気持ちいいけど治らない...この状況をなんとか変える手段はないのか？
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -505,9 +517,11 @@ export default function MatrixWaveLanding() {
               size="lg"
               variant="secondary"
               className="text-lg px-8 py-6 bg-white text-blue-600 hover:bg-gray-100"
+              asChild
             >
-              無料相談・デモ予約
-            </Button>
+              <a href="https://www.secure-cloud.jp/sf/business/1741055101GfdWoZwC" target="_blank" rel="noopener noreferrer">
+                無料相談・デモ予約
+              </a>
             <Button
               size="lg"
               variant="outline"
