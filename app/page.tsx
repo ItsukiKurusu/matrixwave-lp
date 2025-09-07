@@ -522,6 +522,7 @@ export default function MatrixWaveLanding() {
               <a href="https://www.secure-cloud.jp/sf/business/1741055101GfdWoZwC" target="_blank" rel="noopener noreferrer">
                 無料相談・デモ予約
               </a>
+            </Button>
             <Button
               size="lg"
               variant="outline"
