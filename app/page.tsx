@@ -1,8 +1,9 @@
-import { Button } from "@/components/ui/button"
-import HeroSection from "@/components/HeroSection"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { CheckCircle, Zap, Shield, Users, TrendingUp, Award, AlertTriangle, History } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/HeroSection";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { CheckCircle, Zap, Shield, Users, TrendingUp, Award, AlertTriangle, History } from "lucide-react";
+
 export default function MatrixWaveLanding() {
   return (
     <div className="min-h-screen bg-background">
@@ -256,14 +257,14 @@ export default function MatrixWaveLanding() {
               <Card className="border-blue-200 hover:border-blue-400 transition-colors">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-4">
-                    <Badge className="bg-blue-600 text-white text-lg px-3 py-1">05</Badge>
+                    <Badge className="bg-blue-600 text-white text-lg px-3 py-1">02</Badge>
                     <CardTitle className="text-xl text-gray-900">グランプリを獲得！美容メニューにも対応</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                              <Badge className="bg-blue-600 text-white text-lg px-3 py-1">01</Badge>
+                    <p className="text-gray-700">フェイシャル〜ボディトリートメントまで幅広いメニュー展開が可能</p>
                   </div>
                   <div className="flex items-start gap-2">
                     <Award className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
@@ -271,7 +272,7 @@ export default function MatrixWaveLanding() {
                   </div>
                 </CardContent>
               </Card>
-              {/* Photo Placeholder 5 */}
+              {/* Photo Placeholder 2 */}
               <div className="mt-6 text-center">
                 <div className="max-w-2xl mx-auto">
                   <img
@@ -289,7 +290,7 @@ export default function MatrixWaveLanding() {
               <Card className="border-blue-200 hover:border-blue-400 transition-colors">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-4">
-                    <Badge className="bg-blue-600 text-white text-lg px-3 py-1">02</Badge>
+                    <Badge className="bg-blue-600 text-white text-lg px-3 py-1">03</Badge>
                     <CardTitle className="text-xl text-gray-900">即効性と深層アプローチで高い効果</CardTitle>
                   </div>
                 </CardHeader>
@@ -297,14 +298,14 @@ export default function MatrixWaveLanding() {
                   <div className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                     <p className="text-gray-700">筋緊張の緩和のみでなく、イオン効果により自然治癒の促進</p>
-                              <Badge className="bg-blue-600 text-white text-lg px-3 py-1">02</Badge>
+                  </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                     <p className="text-gray-700">神経の促通により、筋力低下からの回復をサポート</p>
                   </div>
                 </CardContent>
               </Card>
-              {/* Photo Placeholder 2 */}
+              {/* Photo Placeholder 3 */}
               <div className="mt-6 text-center">
                 <div className="max-w-2xl mx-auto">
                   <img
