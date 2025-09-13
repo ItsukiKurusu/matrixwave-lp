@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import HeroSection from "@/components/HeroSection"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Zap, Shield, Users, TrendingUp, Award, AlertTriangle, History } from "lucide-react"
@@ -7,37 +8,7 @@ export default function MatrixWaveLanding() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-blue-100 py-20 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <Badge className="mb-6 bg-blue-600 text-white hover:bg-blue-700">プロスポーツチーム公認</Badge>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 text-balance">
-            ひとりの男の挑戦が生んだ
-            <br />
-            <span className="text-blue-600">電気治療の歴史を変えた1台</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-4xl mx-auto text-pretty">
-            整形外科・スポーツ・美容分野に応用できる
-            <br />
-            これまでにない新たな治療コンセプト
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8 py-6 bg-blue-600 hover:bg-blue-700 text-white" asChild>
-              <a href="https://www.secure-cloud.jp/sf/business/1741055101GfdWoZwC" target="_blank" rel="noopener noreferrer">
-                無料相談・デモ予約
-              </a>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-lg px-8 py-6 border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
-              asChild>
-              <a href="https://www.secure-cloud.jp/sf/business/1741055101GfdWoZwC" target="_blank" rel="noopener noreferrer">
-                詳細資料をダウンロード
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* Story Introduction */}
       <section className="py-16 px-4 bg-white">
