@@ -3,7 +3,6 @@ import HeroSection from "@/components/HeroSection"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Zap, Shield, Users, TrendingUp, Award, AlertTriangle, History } from "lucide-react"
-
 export default function MatrixWaveLanding() {
   return (
     <div className="min-h-screen bg-background">
@@ -144,37 +143,11 @@ export default function MatrixWaveLanding() {
               <CardHeader>
                 <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                 <CardTitle className="text-xl text-gray-900">プロスポーツチーム</CardTitle>
-              <div>
-                <Card className="border-blue-200 hover:border-blue-400 transition-colors">
-                  <CardHeader>
-                    <div className="flex items-center gap-3 mb-4">
-                      <Badge className="bg-blue-600 text-white text-lg px-3 py-1">02</Badge>
-                      <CardTitle className="text-xl text-gray-900">グランプリを獲得！美容メニューにも対応</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                      <p className="text-gray-700">フェイシャル〜ボディトリートメントまで幅広いメニュー展開が可能</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <Award className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
-                      <p className="text-gray-700">エステグランプリ「エスグラ」でグランプリを獲得</p>
-                    </div>
-                  </CardContent>
-                </Card>
-                {/* Photo Placeholder 5 */}
-                <div className="mt-6 text-center">
-                  <div className="max-w-2xl mx-auto">
-                    <img
-                      src="/esthetic-grandprix-results.png"
-                      alt="エステグランプリ受賞と美容メニューのビフォーアフター結果写真"
-                      className="w-full h-auto rounded-lg shadow-lg border border-gray-200"
-                    />
-                    <p className="text-gray-500 text-sm mt-2">エステグランプリ受賞・美容メニューの結果</p>
-                  </div>
-                </div>
-              </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700">選手たちのパフォーマンス向上に大きく貢献</p>
+              </CardContent>
+            </Card>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">「革新を超えた、進化した治療機器」</h2>
@@ -530,5 +503,5 @@ export default function MatrixWaveLanding() {
         </div>
       </section>
     </div>
-  )
+  );
 }
