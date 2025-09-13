@@ -5,8 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Zap, Shield, Users, TrendingUp, Award, AlertTriangle, History } from "lucide-react";
 
 export default function MatrixWaveLanding() {
-  return (
-    <div className="min-h-screen bg-background">
+    return (
+      <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <HeroSection />
 
@@ -26,9 +26,9 @@ export default function MatrixWaveLanding() {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
               電気治療の歴史を変える開発の裏に、ひとりの男の挑戦があった
             </h2>
-
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="space-y-6">
+                {/* ...existing code for three history blocks... */}
                 <div className="flex items-start gap-3">
                   <History className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
                   <div>
@@ -39,7 +39,6 @@ export default function MatrixWaveLanding() {
                     </p>
                   </div>
                 </div>
-
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-6 h-6 text-red-500 mt-1 flex-shrink-0" />
                   <div>
@@ -50,7 +49,6 @@ export default function MatrixWaveLanding() {
                     </p>
                   </div>
                 </div>
-
                 <div className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
                   <div>
@@ -62,7 +60,6 @@ export default function MatrixWaveLanding() {
                   </div>
                 </div>
               </div>
-
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex flex-col items-center">
                   <img
@@ -85,7 +82,7 @@ export default function MatrixWaveLanding() {
             </div>
           </div>
         </div>
-      </section>
+  </section>
 
       {/* Challenge Section */}
       <section className="py-16 px-4 bg-gray-50">
@@ -149,62 +146,8 @@ export default function MatrixWaveLanding() {
                 <p className="text-gray-700">選手たちのパフォーマンス向上に大きく貢献</p>
               </CardContent>
             </Card>
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">「革新を超えた、進化した治療機器」</h2>
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto">
-              本機器と他の治療機器との最大の違いは、最先端の直流電位刺激技術を駆使し、神経・筋肉・関節への深層ケアを実現している点です。
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="bg-white p-8 rounded-lg shadow-lg mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  従来の常識に反して、発売から10年間でやけどの事故はゼロ
-                </h3>
-                <p className="text-gray-700">
-                  直流式は火傷のリスクは避けられない。そんな従来の常識を覆し、安全性・専門性が評価されています。
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900">3種類のモード搭載</h4>
-                    <p className="text-gray-700">用途別の3種類のモードで直流電流の治療効果を最大化</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Shield className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900">炎症部位への安全なアプローチ</h4>
-                    <p className="text-gray-700">従来機器では禁忌とされていた炎症部位への使用も可能</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Zap className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900">深層筋肉への効果的アプローチ</h4>
-                    <p className="text-gray-700">
-                      従来機器とは電流の強さが根本的に異なり、深層まで届く効果的な筋収縮を実現
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <img
-                src="/matrixwave.png"
-                alt="マトリクスウェーブ治療器"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
+          {/* ...existing code for innovation section... */}
+        </div>
         </div>
       </section>
 
@@ -330,7 +273,6 @@ export default function MatrixWaveLanding() {
                 <CardContent className="space-y-3">
                   <div className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                              <Badge className="bg-blue-600 text-white text-lg px-3 py-1">03</Badge>
                   </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
@@ -362,7 +304,7 @@ export default function MatrixWaveLanding() {
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex items-start gap-2">
-                              <Badge className="bg-blue-600 text-white text-lg px-3 py-1">04</Badge>
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                     <p className="text-gray-700">筋緊張緩和効果だけでなく、細胞への働きかけで促通が可能</p>
                   </div>
                   <div className="flex items-start gap-2">
