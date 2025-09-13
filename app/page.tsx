@@ -144,37 +144,37 @@ export default function MatrixWaveLanding() {
               <CardHeader>
                 <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                 <CardTitle className="text-xl text-gray-900">プロスポーツチーム</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-700">選手たちのパフォーマンス向上に大きく貢献</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-blue-200 hover:border-blue-400 transition-colors">
-              <CardHeader>
-                <TrendingUp className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-gray-900">外傷治療促進</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-700">捻挫の回復が通常の1/4の期間で完了する驚くべきスピード</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-blue-200 hover:border-blue-400 transition-colors">
-              <CardHeader>
-                <Award className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <CardTitle className="text-xl text-gray-900">疲労回復促進</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-700">激しいトレーニングや試合後のリカバリーに効果的</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Technology Innovation Section */}
-      <section className="py-16 px-4 bg-blue-50">
+              <div>
+                <Card className="border-blue-200 hover:border-blue-400 transition-colors">
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-4">
+                      <Badge className="bg-blue-600 text-white text-lg px-3 py-1">02</Badge>
+                      <CardTitle className="text-xl text-gray-900">グランプリを獲得！美容メニューにも対応</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-3">
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-gray-700">フェイシャル〜ボディトリートメントまで幅広いメニュー展開が可能</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Award className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-gray-700">エステグランプリ「エスグラ」でグランプリを獲得</p>
+                    </div>
+                  </CardContent>
+                </Card>
+                {/* Photo Placeholder 5 */}
+                <div className="mt-6 text-center">
+                  <div className="max-w-2xl mx-auto">
+                    <img
+                      src="/esthetic-grandprix-results.png"
+                      alt="エステグランプリ受賞と美容メニューのビフォーアフター結果写真"
+                      className="w-full h-auto rounded-lg shadow-lg border border-gray-200"
+                    />
+                    <p className="text-gray-500 text-sm mt-2">エステグランプリ受賞・美容メニューの結果</p>
+                  </div>
+                </div>
+              </div>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">「革新を超えた、進化した治療機器」</h2>
@@ -278,6 +278,38 @@ export default function MatrixWaveLanding() {
                 </div>
               </div>
             </div>
+            {/* Reason 05 (moved here) */}
+            <div>
+              <Card className="border-blue-200 hover:border-blue-400 transition-colors">
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-4">
+                    <Badge className="bg-blue-600 text-white text-lg px-3 py-1">05</Badge>
+                    <CardTitle className="text-xl text-gray-900">グランプリを獲得！美容メニューにも対応</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                              <Badge className="bg-blue-600 text-white text-lg px-3 py-1">01</Badge>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Award className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-gray-700">エステグランプリ「エスグラ」でグランプリを獲得</p>
+                  </div>
+                </CardContent>
+              </Card>
+              {/* Photo Placeholder 5 */}
+              <div className="mt-6 text-center">
+                <div className="max-w-2xl mx-auto">
+                  <img
+                    src="/esthetic-grandprix-results.png"
+                    alt="エステグランプリ受賞と美容メニューのビフォーアフター結果写真"
+                    className="w-full h-auto rounded-lg shadow-lg border border-gray-200"
+                  />
+                  <p className="text-gray-500 text-sm mt-2">エステグランプリ受賞・美容メニューの結果</p>
+                </div>
+              </div>
+            </div>
 
             {/* Reason 02 */}
             <div>
@@ -292,7 +324,7 @@ export default function MatrixWaveLanding() {
                   <div className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                     <p className="text-gray-700">筋緊張の緩和のみでなく、イオン効果により自然治癒の促進</p>
-                  </div>
+                              <Badge className="bg-blue-600 text-white text-lg px-3 py-1">02</Badge>
                   <div className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                     <p className="text-gray-700">神経の促通により、筋力低下からの回復をサポート</p>
@@ -324,7 +356,7 @@ export default function MatrixWaveLanding() {
                 <CardContent className="space-y-3">
                   <div className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <p className="text-gray-700">足関節捻挫や膝の靭帯損傷などの炎症期にも使用可能</p>
+                              <Badge className="bg-blue-600 text-white text-lg px-3 py-1">03</Badge>
                   </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
@@ -356,7 +388,7 @@ export default function MatrixWaveLanding() {
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                              <Badge className="bg-blue-600 text-white text-lg px-3 py-1">04</Badge>
                     <p className="text-gray-700">筋緊張緩和効果だけでなく、細胞への働きかけで促通が可能</p>
                   </div>
                   <div className="flex items-start gap-2">
@@ -379,37 +411,6 @@ export default function MatrixWaveLanding() {
             </div>
 
             {/* Reason 05 */}
-            <div>
-              <Card className="border-blue-200 hover:border-blue-400 transition-colors">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-4">
-                    <Badge className="bg-blue-600 text-white text-lg px-3 py-1">05</Badge>
-                    <CardTitle className="text-xl text-gray-900">グランプリを獲得！美容メニューにも対応</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <p className="text-gray-700">フェイシャル〜ボディトリートメントまで幅広いメニュー展開が可能</p>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <Award className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
-                    <p className="text-gray-700">エステグランプリ「エスグラ」でグランプリを獲得</p>
-                  </div>
-                </CardContent>
-              </Card>
-              {/* Photo Placeholder 5 */}
-              <div className="mt-6 text-center">
-                <div className="max-w-2xl mx-auto">
-                  <img
-                    src="/esthetic-grandprix-results.png"
-                    alt="エステグランプリ受賞と美容メニューのビフォーアフター結果写真"
-                    className="w-full h-auto rounded-lg shadow-lg border border-gray-200"
-                  />
-                  <p className="text-gray-500 text-sm mt-2">エステグランプリ受賞・美容メニューの結果</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -419,7 +420,7 @@ export default function MatrixWaveLanding() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              進化した治療機器で治療院経営が変わる
+                              <Badge className="bg-blue-600 text-white text-lg px-3 py-1">05</Badge>
               <br />
               マトリクスウェーブ導入のメリット
             </h2>
